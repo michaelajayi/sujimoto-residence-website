@@ -1,0 +1,38 @@
+.modal-container{
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+}
+
+.modal-body{
+    height: fit-content !important;
+}
+.card__title__heading {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 114.49%;
+	letter-spacing: 0.26em;
+	color: #070808;
+}
+
+.card__title__sub {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 114.49%;
+	letter-spacing: 0.26em;
+	text-align: center;
+	color: #030202;
+  margin-top: 5px;
+}
+.desc{
+	font-family: "Cormorant Garamond", serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 128.5%;
+	color: #100707;
+	text-align: center !important;
+}

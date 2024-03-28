@@ -1,0 +1,80 @@
+.about__heading {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.8em;
+}
+
+.about__container {
+  height: auto;
+  /* height: 120vh; */
+  padding-top: 8rem;
+  position: relative;
+}
+
+/* .about__container::before {
+  content: "";
+  background: url("../../assets/img/banner/blackmarble.png") no-repeat center center/cover;
+  background-attachment: fixed;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100vw;
+  z-index: -99;
+  filter: brightness(0.8);
+} */
+
+.about__wrapper {
+  width: 80%;
+  max-width: 80%;
+  gap: 5rem;
+}
+
+.sub__text {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 145.9%;
+  letter-spacing: 0.09em;
+  color: #a7884c;
+  width: 100%;
+}
+
+.lead__img {
+  transition: .5s;
+  position: relative;
+}
+
+.lead__img::before {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: white;
+}
+
+.lead__img:hover {
+  /* transform: translateY(-3px); */
+  transform: scale(1.05, 1.05);
+}
+
+.project__title {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.3em;
+}
+
+@media (min-width: 769px) {
+
+  .lead__text,
+  .sub__text {
+    width: 75%;
+  }
+}

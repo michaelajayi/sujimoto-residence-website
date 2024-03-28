@@ -1,0 +1,130 @@
+*{
+  box-shadow: none !important;
+}
+.contact {
+    position: relative;
+    margin: 5rem 0;
+}
+
+.contact::before {
+    content: '';
+    background: url('../../assets/img/contact/contact-img.png');
+    background: red;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+.contact_head {
+    color: white;
+    width: 100%;
+    padding-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1em;
+    text-transform: uppercase;
+}
+
+.name-box {
+    width: 90%;
+    background-color: #2D2D2D !important;
+    border: none !important;
+    /* border: 1px solid #2D2D2D; */
+    padding: 1rem .85rem;
+}
+
+.name-box::placeholder,
+.email-box::placeholder {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 123%;
+}
+
+.email-box {
+    /* margin-bottom: 30px; */
+    width: 90%;
+    background-color: #2D2D2D !important;
+    border: none;
+    padding: 1rem .85rem;
+}
+
+.email-box:focus,
+.email-box:active {
+    border: none;
+    box-shadow: none;
+}
+
+.message-box {
+    padding: 1rem .85rem;
+    background-color: #2D2D2D !important;
+    border: none;
+}
+
+.message-box::placeholder {
+    position: absolute;
+    color: white;
+    top: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.send-message {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    padding: .85rem .9rem;
+    color: #D5897B;
+    border: none;
+    border: 1px solid #D5897B;
+    background-color: transparent;
+    transition: .1s;
+}
+
+.send-message:hover {
+    background: #D5897B;
+    color: white;
+    transform: translateY(-3px);
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    .contact {
+        padding-left: 4rem;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width:425px) {
+    .contact {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .name-box {
+        width: 100%;
+    }
+
+    .email-box {
+        width: 100%;
+    }
+}
+
+.form__wrapper {
+    width: 70%;
+}
+@media screen and (max-width: 768px) {
+    .phone {
+        margin-bottom: 1.5rem;
+    }
+}

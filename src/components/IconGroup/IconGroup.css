@@ -1,0 +1,50 @@
+.icon__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.icons__container {
+  border-top: 1px solid #d5897b;
+  /* border-top: 1px solid #fff; */
+  padding-top: 1rem;
+  position: relative;
+}
+
+/* .icon__box {
+  transition: 1s;
+} */
+
+.icon__box:hover .icon__text {
+  font-weight: bold;
+}
+
+.active__focus {
+  /* background: #d5897b; */
+  background: #fff;
+  border-radius: 1px 1px 0px 0px;
+  height: 6px;
+}
+
+.tabbed__hero {
+  background: #d5897b;
+  background: #fff;
+  border: 1px solid #d5897b;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  height: 7px;
+  position: absolute;
+  top: -7px;
+  -webkit-transition: left 0.5s linear;
+  transition: left 0.5s linear;
+  transition: 5s;
+  width: 14.98575%;
+}
+
+

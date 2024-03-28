@@ -1,0 +1,74 @@
+.details__wrapper {
+  /* height: 50vh; */
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.details__heading {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.8em;
+}
+
+
+.icon__box__container {
+  width: 40%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .icon__box__container {
+    width: 80%
+  }
+}
+
+.icon__box__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.34em;
+  color: #121212;
+}
+
+.book__now__btn {
+  background: #121212;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 123%;
+  text-align: center;
+  padding: 1rem 2rem;
+  color: #FFFFFF;
+  transition: .5s;
+  animation: pulser 1500ms infinite;
+}
+
+@keyframes pulser {
+  0% {
+    box-shadow: #121212 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #12121200 0 0 0 16px;
+  }
+}
+
+.book__now__btn:hover {
+  background: #252424;
+}
+
+.book__now__btn:hover,
+.book__now__btn:active,
+.book__now__btn:focus {
+  background-color: #121212;
+  border: none;
+  box-shadow: none;
+}

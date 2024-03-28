@@ -1,0 +1,45 @@
+.lifestyle__container {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  /* padding: 13rem 10rem; */
+  display: grid;
+  place-content: left center;
+}
+
+.lifestyle__container::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/img/lifestyle-banners/01.svg");
+  filter: brightness(0.7);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+  z-index: -99;
+}
+
+.lifestyle__inner__title {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 117.49%;
+  letter-spacing: 0.05em;
+}
+
+.lifestyle__inner__desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.34em;
+  /* width: 30%; */
+}
+
+.lifestyle__inner {
+  /* padding: 0 8rem; */
+}

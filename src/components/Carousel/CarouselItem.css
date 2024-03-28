@@ -1,0 +1,162 @@
+.carousel__card {
+	cursor: grab;
+	height: 55vh;
+	width: auto !important;
+}
+
+.card__title__heading {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 114.49%;
+	letter-spacing: 0.26em;
+	color: #070808;
+}
+
+.card__title__sub {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 114.49%;
+	letter-spacing: 0.26em;
+	text-align: center;
+	color: #030202;
+  margin-top: 5px;
+}
+
+.amenities {
+	margin-top: 2.5rem;
+	margin-bottom: 3rem;
+}
+
+.amenities > ul {
+	font-family: "Cormorant Garamond", serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 128.5%;
+	color: #100707;
+}
+
+.amenities > ul > :first-child {
+	font-weight: bold;
+}
+
+.card__btn:first-child {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 9px;
+	line-height: 102.1%;
+	text-align: center;
+	letter-spacing: 0.29em;
+	background: #000;
+	border: 1px solid #000;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.card__btn:first-child:hover {
+	background: transparent;
+	color: #000;
+	font-weight: bold;
+}
+
+.card__btn:last-child {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 9px;
+	line-height: 102.1%;
+	text-align: center;
+	letter-spacing: 0.29em;
+	border: 1px solid #000;
+	background: transparent;
+	color: #130707;
+	transition: 0.5s;
+}
+
+.card__btn:last-child:hover {
+	font-weight: bold;
+}
+
+.card__btn {
+	width: 8rem;
+	padding: 0.85rem 1.5rem;
+}
+
+.card__btn:first-child:hover,
+.card__btn:active,
+.card__btn:focus {
+	box-shadow: 1px solid #000;
+}
+
+.img-box {
+	overflow: hidden;
+}
+
+.card__image {
+	position: relative;
+	object-fit: cover;
+	transition: transform 0.5s ease;
+}
+
+.card__image:hover {
+	transform: scale(1.1);
+}
+
+.slider,
+.animated {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.transparent__content {
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+.active__card {
+	/* transform: scaleY(1.4); */
+	/* height: 650px; */
+	/* width: 25rem !important; */
+	padding: 0.5rem 0;
+	height: auto;
+}
+
+.swiper-slide .duplicate {
+	margin-right: 0px !important;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+	.carousel__card {
+		/* width: 30rem; */
+	}
+}
+
+@media (width: 768px) {
+	.carousel__card {
+		/* width: 20rem; */
+	}
+}
+
+@media (width: 1024px) {
+	.carousel__card {
+		width: 22.5rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.carousel__card {
+		width: 22.5rem;
+	}
+}
+
+.swiper-pagination-horizontal {
+	z-index: 99;
+	color: black;
+	/* margin-top: 33rem; */
+}

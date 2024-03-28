@@ -1,0 +1,77 @@
+.footer__container {
+  background: #000;
+}
+
+.footer__row {
+  width: 80%;
+  flex: 1 1 0 !important;
+}
+
+.footer__copyright {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: #989898;
+}
+
+.footer__text {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 147%;
+  text-align: center;
+  letter-spacing: 0.11em;
+  color: #989898;
+}
+
+.footer__contact {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #989898;
+}
+
+.footer__icon {
+  color: #989898;
+  border: 1px solid #989898;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+}
+.footer__icon:hover {
+  color: white;
+}
+
+.contact-phone {
+  color: #989898;
+  text-decoration: none;
+}
+
+.contact-phone:hover {
+  color: white;
+}
+
+.contact-phone:visited {
+    color: #989898;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer__row {
+    width: 100%;
+  }
+}
+
+@media (width: 768px) {
+  .footer__row {
+    width: 85%;
+  }
+}

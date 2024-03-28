@@ -1,0 +1,15 @@
+.gallery__wrapper {
+  /* height: 50vh; */
+  height: auto;
+  padding: 2rem 0;
+}
+
+.gallery__heading {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.8em;
+}

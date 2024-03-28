@@ -1,0 +1,92 @@
+.booking__heading {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.8em;
+  z-index: 5;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .booking__heading {
+    letter-spacing: 0.4rem;
+    margin-bottom: 2px;
+  }
+}
+
+.booking__wrapper {
+  height: auto;
+  width: "100%";
+  position: relative;
+  padding: 5rem 0;
+  z-index: 2;
+}
+
+.booking__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* .booking__wrapper {
+  height: 100%;
+  width: 100%;
+  background: url('../../assets/img/banner/03.jpg') no-repeat center center/cover;
+} */
+
+.booking__text__wrapper {
+  /* padding: 7rem 4rem; */
+}
+
+.booking__container {
+  gap: 5rem;
+}
+
+/* .booking__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 100vw;
+  background: url("../../assets/img/banner/bg_overlay.svg") no-repeat center center/cover;
+  z-index: -99;
+}
+
+.booking__wrapper::after {
+  content: "";
+  z-index: -99;
+  position: absolute;
+  width: 100vw;
+  height: 1008px;
+  left: 0;
+  top: 0;
+
+  background: linear-gradient(180deg,
+      #0e0e0f 25.74%,
+      rgba(14, 14, 15, 0) 58.74%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+} */
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .booking__wrapper::after {
+    height: 1173px;
+  }
+}
+.check__in {
+  width: 240%;
+}
+
+@media (max-width: 768px) {
+  .check__in {
+    width: 100%;
+  }
+}
+

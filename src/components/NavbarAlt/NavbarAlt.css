@@ -1,0 +1,52 @@
+:root {
+  --clr-orange: 9, 52%, 66%;
+}
+
+.nav__wrapper {
+  width: 90%;
+}
+
+.alt__hero__heading {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 117.49%;
+  text-align: center;
+  letter-spacing: 0.38em;
+}
+
+.alt__hero__paragraph {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 114.49%;
+  letter-spacing: 1.11em;
+}
+
+.schedule__btn {
+  background-color: hsl(9, 52%, 66%);
+  border: none;
+  box-shadow: none;
+  transition: all 700ms ease-in-out;
+  animation: pulse 1500ms infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: #d5897b 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #d5897b00 0 0 0 16px;
+  }
+}
+
+.schedule__btn:hover,
+.schedule__btn:active,
+.schedule__btn:focus {
+  background-color: hsl(9, 66%, 66%);
+  border: none;
+  box-shadow: none;
+}

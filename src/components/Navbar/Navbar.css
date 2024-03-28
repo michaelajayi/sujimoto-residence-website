@@ -1,0 +1,49 @@
+:root {
+  --clr-orange: 9, 52%, 66%;
+}
+
+/* .fixed__top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 0 8rem;
+} */
+
+.schedule__btn {
+  background-color: hsl(9, 52%, 66%);
+  border: none;
+  box-shadow: none;
+  padding: 20px 30px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  transition: all 700ms ease-in-out;
+  animation: pulse 1500ms infinite;
+}
+
+@media (max-width: 768px) {
+  .schedule__btn {
+    font-size: 10px;
+  padding: 10px 5px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: #d5897b 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #d5897b00 0 0 0 16px;
+  }
+}
+
+.schedule__btn:hover,
+.schedule__btn:active,
+.schedule__btn:focus {
+  background-color: hsl(9, 66%, 66%);
+  border: none;
+  box-shadow: none;
+}

@@ -1,0 +1,31 @@
+.hero__alt__container {
+  width: 100vw;
+  height: 100vh;
+}
+.hero__alt {
+  margin-top: 200rem;
+}
+
+.hero__alt__container {
+  margin-bottom: 4rem;
+}
+
+.hero__alt__text {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 130.9%;
+  text-align: center;
+  letter-spacing: 0.09em;
+}
+
+.hero__alt__icon > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.34em;
+}

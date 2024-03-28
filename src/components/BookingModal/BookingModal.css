@@ -1,0 +1,98 @@
+.title__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 102.1%;
+}
+
+.location__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 102.1%;
+  text-align: center;
+  letter-spacing: 0.28em;
+}
+
+.amount,
+.availability > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 102.1%;
+}
+
+.check-in__label,
+.check-out__label,
+.adult__label,
+.children__label {
+  color: #000;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 102.1%;
+}
+
+.flat-form__controls,
+.flat-form__controls:focus {
+  border-radius: 0;
+  border: 1px solid #000;
+}
+
+.check__in {
+  width: 240%;
+}
+
+@media (maxWidth: 768px) {
+  .check__in {
+    width: 100%;
+  }
+}
+
+.book-now__btn {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  background: #000;
+  letter-spacing: 0.29em;
+  padding: 0.85rem 2rem;
+  border: 1px solid #000 !important;
+  transition: all 0.1s;
+}
+
+.book-now__btn:hover,
+.book-now__btn:focus,
+.book-now__btn:active:focus {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000 !important;
+}
+
+.booking__modal {
+  border-radius: 10px !important;
+}
+
+.close__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.65rem;
+}
+
+@media (max-width: 480px) {
+  .ant-calendar-range {
+    width: 320px;
+  }
+
+  .ant-calendar-range-part {
+    width: 100%;
+  }
+}

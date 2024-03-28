@@ -1,0 +1,22 @@
+.booking__selection__container {
+    /* margin-top: 2rem; */
+    /* margin-bottom: 8rem; */
+}
+
+.submit__btn {
+    background: #D5897B;
+    transition: 1s;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.submit__btn:hover {
+    background: #e28676;
+}
+
+.select__wrapper {
+    /* height: 100%; */
+}
+
+.form__control {
+    border-right: 1px solid #d2d8dd !important;
+}
