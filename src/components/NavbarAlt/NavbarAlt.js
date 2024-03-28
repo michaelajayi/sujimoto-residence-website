@@ -1,8 +1,8 @@
 import React from "react";
 import "./NavbarAlt.css";
 import logo from "../../assets/img/logo.svg";
-import { Image, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from "next/link";
 
 const NavbarAlt = () => {
   return (
@@ -12,7 +12,7 @@ const NavbarAlt = () => {
     >
       <div className='nav__wrapper d-flex align-items-center justify-content-between my-5'>
         <Link to='/'>
-          <Image src={logo} fluid />
+          <Image src={logo} fluid alt='logo' priority />
         </Link>
         <div className='text-uppercase d-flex flex-column align-items-center justify-content-center gap-3 align-self-end d-none d-md-block'>
           <h1 className='alt__hero__heading mt-5'>Mayfair</h1>

@@ -16,7 +16,7 @@ const Navbar = () => {
 
   useEffect(() => {
     dispatch(getPropertiesAsync());
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -41,19 +41,19 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-full h-full absolute top-0 left-0">
-      <div className="flex justify-between items-center px-5 md:px-20 py-5 ">
-        <Link href="/" className="cursor-pointer">
+    <div className='w-full h-full absolute top-0 left-0'>
+      <div className='flex justify-between items-center px-5 md:px-20 py-5 '>
+        <Link href='/' className='cursor-pointer'>
           <Image
             src={logo}
             ref={logoRef}
-            className="w-[75%] md:w-full"
-            alt="logo"
+            className='w-[75%] md:w-full'
+            alt='logo'
           />
         </Link>
         <a
-          href="#contact-us"
-          className="bg-[#d5897b] hover:bg-[#c2786f] px-5 md:px-10 py-5 md:py-5 tracking-[1.95px] text-white font-work-sans text-[10px] md:text-[13px] uppercase font-light cursor-pointer transform transition-all duration-200 animate-pulse"
+          href='#contact-us'
+          className='bg-[#d5897b] hover:bg-[#c2786f] px-5 md:px-10 py-5 md:py-5 tracking-[1.95px] text-white font-work-sans text-[10px] md:text-[13px] uppercase font-light cursor-pointer transform transition-all duration-200 animate-pulse'
         >
           Schedule Inspection
         </a>

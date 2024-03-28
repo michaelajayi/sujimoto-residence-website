@@ -59,8 +59,8 @@ const Carousel = () => {
           },
         }}
       >
-        {carousels.map((carousel) => (
-          <SwiperSlide>
+        {carousels.map((carousel, index) => (
+          <SwiperSlide key={index}>
             <CarouselItem carousel={carousel} />
           </SwiperSlide>
         ))}

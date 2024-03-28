@@ -34,9 +34,14 @@ const GalleryCarousel = ({ gallery }) => {
         effect='fade'
         className='mySwiper'
       >
-        {gallery.map((c) => (
-          <SwiperSlide>
-            <Image src={c.url} fluid className='gallery__image' />
+        {gallery.map((c, index) => (
+          <SwiperSlide key={index}>
+            <Image
+              src={c.url}
+              fluid
+              className='gallery__image'
+              alt='gallery image'
+            />
           </SwiperSlide>
         ))}
       </Swiper>

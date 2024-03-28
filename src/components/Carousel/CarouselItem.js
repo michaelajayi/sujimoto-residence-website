@@ -42,7 +42,7 @@ const CarouselItem = ({ carousel }) => {
 			activeBackgroundRef.current = carousel.img
 			dispatch(setActiveCarouselBg(activeBackgroundRef.current))
 		}
-	}, [carousel.title, dispatch, swiperSlide.isActive])
+	}, [carousel.img, carousel.title, dispatch, swiperSlide.isActive])
 
 	// useEffect(() => {
 	//   cardImgRef.current.addEventListener("mouseover", () => {

@@ -19,6 +19,7 @@ const PropertyHero = ({description}) => {
                 src={locationIcon}
                 fluid
                 style={{ height: "30px", width: "35px" }}
+                alt='location icon'
               />
               <p className='text-uppercase'>Location</p>
             </div>
@@ -27,6 +28,7 @@ const PropertyHero = ({description}) => {
                 src={luxury}
                 fluid
                 style={{ height: "30px", width: "35px" }}
+                alt="luxury icon"
               />
               <p className='text-uppercase'>Luxury</p>
             </div>
@@ -35,6 +37,7 @@ const PropertyHero = ({description}) => {
                 src={comfort}
                 fluid
                 style={{ height: "30px", width: "35px" }}
+                alt="comfort icon"
               />
               <p className='text-uppercase'>Comfort</p>
             </div>

@@ -21,6 +21,7 @@ const Details = ({ icons }) => {
                     src={icon.icon}
                     fluid
                     style={{ height: "30px", width: "35px" }}
+                    alt="icon"
                   />
                   <p className='icon__box__text text-uppercase'>{icon.title}</p>
                 </div>
