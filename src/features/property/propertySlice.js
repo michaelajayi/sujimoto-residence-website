@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
+import carousels from "../../components/Properties/property-array";
 import { baseURL } from "../../global/constants";
 import { bookingSlice } from "../booking/bookingSlice";
-import carousels from "../../components/Carousel/carousels";
 
 const initialState = {
   property: {
@@ -71,8 +71,11 @@ export const propertySlice = createSlice({
   },
 });
 
-export const { setCurrent, setCarousels, setActiveCarouselBg } =
-  propertySlice.actions;
+export const {
+  setCurrent,
+  setCarousels,
+  setActiveCarouselBg,
+} = propertySlice.actions;
 
 export const selectProperty = (state) => state.property;
 

@@ -56,7 +56,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full flex justify-center items-center"
+      className="w-full flex justify-center items-center" id='contactForm'
     >
       <div className="w-full md:w-[55%] lg-[50%] grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch px-5 md:px-0">
         <div className="flex flex-col space-y-5 w-full">

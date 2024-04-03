@@ -28,6 +28,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.properties-swiper .swiper-wrapper {
+  align-items: center;
+}
+
+/* .react-dates-airbnb {
+  width: full;
+  background: red;
+} */
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

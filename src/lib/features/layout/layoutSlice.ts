@@ -10,6 +10,7 @@ interface LayoutState {
     title: string;
   };
   activeBackground: StaticImageData | null;
+  activePropertyBg: StaticImageData | null;
   activeCarousel: {
     title: string;
   };
@@ -31,6 +32,7 @@ const initialState: LayoutState = {
   activeCarousel: {
     title: "",
   },
+  activePropertyBg: null,
   activeHeaderMenu: {
     title: "Italian Furnished Livingrooms",
     icon: livingRoom,
@@ -48,11 +50,14 @@ export const layoutSlice = createSlice({
     setActiveHeaderMenu: (state, action) => {
       state.activeHeaderMenu = action.payload;
     },
+    setActivePropertyBg: (state, action) => {
+      state.activePropertyBg = action.payload;
+    },
   },
   extraReducers: (builder) => {},
 });
 
-export const { setActiveHeaderMenu } = layoutSlice.actions;
+export const { setActiveHeaderMenu, setActivePropertyBg } = layoutSlice.actions;
 
 export const selectLayout = (state: RootState) => state.layout;
 

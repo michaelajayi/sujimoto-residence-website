@@ -119,31 +119,31 @@ const About = () => {
   ];
 
   return (
-    <div className="w-full h-auto py-20 relative flex items-start justify-center">
+    <div className='w-full h-auto py-20 relative flex items-start justify-center'>
       <Image
         src={blackMarble}
-        alt="about bg"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
-        className="absolute top-0 left-0 bg-blend-overlay -z-10"
+        alt='about bg'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        className='absolute top-0 left-0 bg-blend-overlay -z-10'
       />
-      <div className="max-w-full md:max-w-[80%] w-full md:w-[80%] flex flex-col space-y-5 md:space-y-10 px-5 md:px-0 py-0 md:py-0">
-        <h1 className="uppercase font-work-sans text-[15px] text-center font-medium tracking-[.8em]">
+      <div className='max-w-full md:max-w-[80%] w-full md:w-[80%] flex flex-col space-y-5 md:space-y-10 px-5 md:px-0 py-0 md:py-0'>
+        <h1 className='uppercase font-work-sans text-[15px] text-center font-medium tracking-[.8em]'>
           About Sujimoto
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 py-2 md:py-10 justify-center items-center">
-          <div className="flex items-center justify-center">
+        <div className='grid grid-cols-1 md:grid-cols-2 py-2 md:py-10 justify-center items-center'>
+          <div className='flex items-center justify-center'>
             <Image
               src={AboutBanner}
               fluid
-              className="transform transition-all duration-200 ease-in-out hover:scale-105 lead__img"
-              alt="lead img"
+              className='transform transition-all duration-200 ease-in-out hover:scale-105 lead__img'
+              alt='lead img'
             />
           </div>
-          <div className="flex py-8 md:px-0">
-            <div className="flex flex-col space-y-5 w-full md:w-[80%]">
-              <p className="font-work-sans font-light leading-[145.9%] tracking-[.09em] md:text-start">
+          <div className='flex py-8 md:px-0'>
+            <div className='flex flex-col space-y-5 w-full md:w-[80%]'>
+              <p className='font-work-sans font-light leading-[145.9%] tracking-[.09em] md:text-start'>
                 &ldquo;Sujimoto is Nigeria&rsquo;s and Africa&rsquo;s most
                 sophisticated real estate brand and the Rolls Royce of luxury
                 real estate.&rdquo; We are synonymous with peak luxury and are
@@ -154,7 +154,7 @@ const About = () => {
                 renowned thought leaders in architecture, art, hospitality, and
                 innovation.
               </p>
-              <p className="font-work-sans text-[15px] leading-[145.9%] tracking-[.09em] md:text-start mt-3 text-[#a7884c] w-full">
+              <p className='font-work-sans text-[15px] leading-[145.9%] tracking-[.09em] md:text-start mt-3 text-[#a7884c] w-full'>
                 Ikoyi, Banana Island, Abuja, Cape Town, Johannesburg and Dubai;
                 mix-used developments, Commercial as well as Hospitality
                 Developments.
@@ -163,43 +163,43 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-5 md:space-y-10 py-0 md:py-20">
-          <h1 className="uppercase font-work-sans text-[15px] text-center font-medium tracking-[.8em]">
+        <div className='flex flex-col space-y-5 md:space-y-10 py-0 md:py-20'>
+          <h1 className='uppercase font-work-sans text-[15px] text-center font-medium tracking-[.8em]'>
             Our Projects
           </h1>
 
-          <div className="w-full p-0 m-0 flex justify-center items-center">
-            <div className="flex flex-col md:flex-row justify-between w-full space-y-10 md:space-y-0">
+          <div className='w-full p-0 m-0 flex justify-center items-center'>
+            <div className='flex flex-col md:flex-row justify-between w-full space-y-10 md:space-y-0'>
               {projects.map((project, index) =>
                 project.link ? (
-                  <a key={index} href={project.link} target="_blank">
+                  <a key={index} href={project.link} target='_blank'>
                     <div
-                      className="flex flex-col justify-center space-y-3 cursor-pointer"
+                      className='flex flex-col justify-center space-y-3 cursor-pointer'
                       key={project.title}
                     >
                       <Image
                         src={project.img}
-                        alt="project image"
+                        alt='project image'
                         ref={imgRef}
-                        className="project__image"
+                        className='project__image'
                       />
-                      <p className="uppercase font-work-sans font-medium text-[12px] leading-[15px] tracking-[.3em]">
+                      <p className='uppercase font-work-sans font-medium text-[12px] leading-[15px] tracking-[.3em]'>
                         {project.title}
                       </p>
                     </div>
                   </a>
                 ) : (
                   <div
-                    className="flex flex-col justify-center space-y-3 cursor-pointer"
+                    className='flex flex-col justify-center space-y-3 cursor-pointer'
                     key={project.title}
                   >
                     <Image
                       src={project.img}
-                      alt="project image"
+                      alt='project image'
                       ref={imgRef}
-                      className="project__image"
+                      className='project__image'
                     />
-                    <p className="uppercase font-work-sans font-medium text-[12px] leading-[15px] tracking-[.3em]">
+                    <p className='uppercase font-work-sans font-medium text-[12px] leading-[15px] tracking-[.3em]'>
                       {project.title}
                     </p>
                   </div>

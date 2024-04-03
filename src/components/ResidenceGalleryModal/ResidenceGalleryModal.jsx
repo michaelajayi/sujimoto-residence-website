@@ -1,34 +1,15 @@
-import { Container, Image, Modal } from "react-bootstrap";
+import CustomModal from "@/components/CustomModal";
 import { Autoplay, Keyboard } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./ResidenceGalleryModal.css";
 
 const ResidenceGalleryModal = (props) => {
-  return (
-    <Modal
-      {...props}
-      size='xl'
-      aria-labelledby='contained-modal-title-vcenter'
-      centered
-      className='modal-container'
-    >
-      <Modal.Header closeButton>
-        <Modal.Title
-          id='contained-modal-title-vcenter'
-          className='d-flex justify-content-between align-items-center'
-        >
-          <h1 className='card__title__heading fs-5'>
-            {props.title} -{" "}
-            <span className='card__title__sub fs-5'>{props.location}</span>
-          </h1>
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body className='modal-body'>
-        <p className='desc'>{props.description}</p>
-        {/* Gallery Slider Start */}
-        <Container fluid className='px-0'>
-          <Swiper
+  return <div>hi there</div>
+};
+
+export default ResidenceGalleryModal;
+
+{
+  /* <Swiper
             slidesPerView={3}
             spaceBetween={10}
             centeredSlides={true}
@@ -79,17 +60,44 @@ const ResidenceGalleryModal = (props) => {
                 </div>
               </SwiperSlide>
             ))}
-          </Swiper>
-        </Container>
-        {/* Gallery Slider End */}
-        {/* <div>
-					{props.images.map((image, index) => {
-						return <GalleryItem key={index} image={image} />
-					})}
-				</div> */}
-      </Modal.Body>
-    </Modal>
-  );
-};
+          </Swiper> */
+}
 
-export default ResidenceGalleryModal;
+// .modal-container{
+//     background-color: rgba(0,0,0,0.4);
+//     height: 100vh;
+// }
+
+// .modal-body{
+//     height: fit-content !important;
+// }
+// .card__title__heading {
+// 	font-family: "Work Sans", sans-serif;
+// 	font-style: normal;
+// 	font-weight: 700;
+// 	font-size: 14px;
+// 	line-height: 114.49%;
+// 	letter-spacing: 0.26em;
+// 	color: #070808;
+// }
+
+// .card__title__sub {
+// 	font-family: "Work Sans", sans-serif;
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	font-size: 12px;
+// 	line-height: 114.49%;
+// 	letter-spacing: 0.26em;
+// 	text-align: center;
+// 	color: #030202;
+//   margin-top: 5px;
+// }
+// .desc{
+// 	font-family: "Cormorant Garamond", serif;
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	font-size: 1.1rem;
+// 	line-height: 128.5%;
+// 	color: #100707;
+// 	text-align: center !important;
+// }
