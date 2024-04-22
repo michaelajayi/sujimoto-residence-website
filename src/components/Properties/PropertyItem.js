@@ -1,6 +1,7 @@
 import CustomModal from "@/components/CustomModal";
 import { setActivePropertyBg } from "@/lib/features/layout/layoutSlice";
 import { useAppDispatch } from "@/lib/hooks";
+import { formatCurrency, formatCurrencyWithoutSymbol } from "@/lib/utils";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useSwiperSlide } from "swiper/react";
@@ -61,8 +62,8 @@ const PropertyItem = ({ property, isActive }) => {
           swiperSlide.isActive ? "opacity-100" : "opacity-0"
         }`}
       >
-        Price: <span className='font-bold'>{property.minPrice}</span> -{" "}
-        <span className='font-bold'>{property.maxPrice}</span>
+        Price: <span className='font-bold'>{formatCurrencyWithoutSymbol(property.minPrice)}</span> -{" "}
+        <span className='font-bold'>{formatCurrencyWithoutSymbol(property.maxPrice)}</span>
       </p>
       <div
         className={`flex flex-col space-y-1 justify-self-start self-start px-3 ${

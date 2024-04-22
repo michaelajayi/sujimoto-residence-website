@@ -95,8 +95,8 @@ const Properties = () => {
                 spaceBetween: 15,
               },
               1024: {
-                slidesPerView: 2,
-                spaceBetween: 0,
+                slidesPerView: 3,
+                spaceBetween: 10,
               },
               1200: {
                 slidesPerView: 3,

@@ -32,7 +32,7 @@ const Header = () => {
               activeHeaderMenu.src.data !== null && activeHeaderMenu.src.data
             }
             width={1920}
-            height={1080}
+              height={1080}
             className="h-full w-full absolute top-0 left-0 object-cover object-top"
             alt="bg banner"
           />

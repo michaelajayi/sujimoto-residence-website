@@ -74,8 +74,8 @@ const propertyArray = [
       "Experience the regal lifestyle at Ave Montaigne, where every detail exudes sophistication and elegance, and where luxury is elevated to an art form that immerses you in a world of sumptuousness and refinement.",
     active: true,
     img: aveMontaigne,
-    minPrice: `250,000`,
-    maxPrice: "400,000",
+    minPrice: 250000,
+    maxPrice: 400000,
     amenities: [
       {
         title: "3 Bedroom flat",
@@ -116,8 +116,8 @@ const propertyArray = [
     description:
       "Explore the summit of luxurious living at Ave Forsche, where opulence and refinement intertwine to form an encounter of grandeur and extravagance that surpasses even the most discerning expectations.",
     img: aveForsche,
-    minPrice: `350,000`,
-    maxPrice: "400,000",
+    minPrice: 350000,
+    maxPrice: 400000,
     amenities: [
       {
         title: "4 Bedroom flat",
@@ -158,8 +158,8 @@ const propertyArray = [
     description:
       "Surrender to the allure of pure indulgence at Mayfair, where every aspect of the experience is crafted to perfection, and where the ultimate expression of opulence and refinement reigns supreme in a world of unparalleled luxury and elegance.",
     img: mayfair,
-    minPrice: `300,000`,
-    maxPrice: "350,000",
+    minPrice: 300000,
+    maxPrice: 350000,
     amenities: [
       {
         title: "A semi-detatched exclusive home",
@@ -196,8 +196,8 @@ const propertyArray = [
     description:
       "Immerse yourself in a life of unparalleled grandeur at Maybourne, where every moment feels like a luxurious escape, and where the embodiment of comfort, style, and sophistication converge to create a realm of unmatched luxury.",
     img: maybourne,
-    minPrice: `300,000`,
-    maxPrice: "350,000",
+    minPrice: 300000,
+    maxPrice: 350000,
     amenities: [
       {
         title: "Luxuriously furnished 3 bedroom flat",
@@ -238,8 +238,8 @@ const propertyArray = [
     description:
       "Step into a nostalgia-laden journey where the essence of old Ikoyi vibes intertwines seamlessly with a touch of opulence and jaw-dropping amenities. Minimum of 5/7 night booking at N250,000 per night. Discounts is available for long bookings.",
     img: donalds1,
-    minPrice: `250,000`,
-    maxPrice: "300,000",
+    minPrice: 250000,
+    maxPrice: 300000,
     amenities: [
       {
         title: "3 bedroom flat terrace",
@@ -284,8 +284,8 @@ const propertyArray = [
     description:
       "Encounter a world of timeless beauty and enchantment at Lancaster, where classic grace and modern luxury intertwine to create a truly unforgettable living experience that exudes sophistication and elegance at every turn.",
     img: lancaster,
-    minPrice: `250,000`,
-    maxPrice: "300,000",
+    minPrice: 250000,
+    maxPrice: 300000,
     amenities: [
       {
         title: "3 bedroom flat terrace",

@@ -32,11 +32,6 @@ body {
   align-items: center;
 }
 
-/* .react-dates-airbnb {
-  width: full;
-  background: red;
-} */
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;

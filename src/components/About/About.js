@@ -39,25 +39,25 @@ const About = () => {
         },
       }
     );
-    gsap.fromTo(
-      ".about__texts__container",
-      {
-        opacity: 0,
-        xPercent: 100,
-      },
-      {
-        opacity: 1,
-        xPercent: 0,
-        ease: "power2.in",
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".about__texts__container",
-          // markers: true,
-          start: "top bottom",
-        },
-      },
-      "-=1"
-    );
+    // gsap.fromTo(
+    //   ".about__texts__container",
+    //   {
+    //     opacity: 0,
+    //     xPercent: 100,
+    //   },
+    //   {
+    //     opacity: 1,
+    //     xPercent: 0,
+    //     ease: "power2.in",
+    //     duration: 1,
+    //     scrollTrigger: {
+    //       trigger: ".about__texts__container",
+    //       // markers: true,
+    //       start: "top bottom",
+    //     },
+    //   },
+    //   "-=1"
+    // );
 
     tl.fromTo(
       ".hero__texts",
@@ -124,7 +124,7 @@ const About = () => {
         src={blackMarble}
         alt='about bg'
         layout='fill'
-        objectFit='cover'
+        fit='cover'
         objectPosition='center'
         className='absolute top-0 left-0 bg-blend-overlay -z-10'
       />
@@ -132,7 +132,7 @@ const About = () => {
         <h1 className='uppercase font-work-sans text-[15px] text-center font-medium tracking-[.8em]'>
           About Sujimoto
         </h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 py-2 md:py-10 justify-center items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 py-2 md:py-10 justify-center items-center gap-5'>
           <div className='flex items-center justify-center'>
             <Image
               src={AboutBanner}
@@ -144,7 +144,7 @@ const About = () => {
           <div className='flex py-8 md:px-0'>
             <div className='flex flex-col space-y-5 w-full md:w-[80%]'>
               <p className='font-work-sans font-light leading-[145.9%] tracking-[.09em] md:text-start'>
-                &ldquo;Sujimoto is Nigeria&rsquo;s and Africa&rsquo;s most
+                Sujimoto is Nigeria&rsquo;s and Africa&rsquo;s most
                 sophisticated real estate brand and the Rolls Royce of luxury
                 real estate.&rdquo; We are synonymous with peak luxury and are
                 committed to excellence in hospitality and values. Our
@@ -169,7 +169,7 @@ const About = () => {
           </h1>
 
           <div className='w-full p-0 m-0 flex justify-center items-center'>
-            <div className='flex flex-col md:flex-row justify-between w-full space-y-10 md:space-y-0'>
+            <div className='flex flex-col md:flex-row justify-between w-full space-y-10 md:space-y-0 md:space-x-5'>
               {projects.map((project, index) =>
                 project.link ? (
                   <a key={index} href={project.link} target='_blank'>
@@ -177,12 +177,13 @@ const About = () => {
                       className='flex flex-col justify-center space-y-3 cursor-pointer'
                       key={project.title}
                     >
-                      <Image
-                        src={project.img}
-                        alt='project image'
-                        ref={imgRef}
-                        className='project__image'
-                      />
+                      <div className='project__image'>
+                        <Image
+                          src={project.img}
+                          alt='project image'
+                          ref={imgRef}
+                        />
+                      </div>
                       <p className='uppercase font-work-sans font-medium text-[12px] leading-[15px] tracking-[.3em]'>
                         {project.title}
                       </p>

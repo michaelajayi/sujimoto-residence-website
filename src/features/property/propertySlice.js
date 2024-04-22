@@ -24,9 +24,25 @@ export const getPropertiesAsync = createAsyncThunk(
   async () => {
     try {
       const res = await axios.get(`${baseURL}/properties`);
+      console.log(res.data);
       return res.data;
     } catch (err) {
       console.error(err.response.msg);
+    }
+  }
+);
+
+export const saveContactForm = createAsyncThunk(
+  "property/saveContactForm",
+  async (payload) => {
+    console.log(payload);
+    try {
+      const res = await axios.post(`${baseURL}/contact`, payload);
+      console.log(res.data);
+      return res.data;
+    } catch (err) {
+      console.error(err.response.msg);
+      // return thunkAPI.rejectWithValue(err.response.data.msg);
     }
   }
 );
@@ -71,11 +87,8 @@ export const propertySlice = createSlice({
   },
 });
 
-export const {
-  setCurrent,
-  setCarousels,
-  setActiveCarouselBg,
-} = propertySlice.actions;
+export const { setCurrent, setCarousels, setActiveCarouselBg } =
+  propertySlice.actions;
 
 export const selectProperty = (state) => state.property;
 

@@ -53,28 +53,32 @@ const PropertyGalleryModal: React.FC<PropertyGalleryModalProps> = ({
           onSwiper={(swiper) => {
             setSwiperLoading(false);
           }}
-            autoplay={{
-                delay: 3000,
-                pauseOnMouseEnter: true,
-            }}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: true,
+          }}
           keyboard={{ enabled: true }}
           modules={[Keyboard, Pagination, Navigation, Autoplay]}
           breakpoints={{
             320: {
               slidesPerView: 1,
-              spaceBetween: 10,
+              spaceBetween: 5,
             },
             768: {
               slidesPerView: 1.5,
+              spaceBetween: 5,
             },
             1024: {
-              slidesPerView: 2.5,
+              slidesPerView: 2,
+              spaceBetween: 5,
             },
             1440: {
-              slidesPerView: 3,
+              slidesPerView: 2.5,
+              spaceBetween: 5,
             },
             1920: {
               slidesPerView: 3,
+              spaceBetween: 5,
             },
           }}
         >

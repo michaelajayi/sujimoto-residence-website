@@ -20,14 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <StoreProvider>
-      <html lang="en">
+      <html lang='en'>
         <body
           className={`${inter.className} min-h-screen min-w-screen w-screen h-auto overflow-x-hidden relative`}
         >
-          <div className="relative z-30">
+          <div className='relative z-30'>
             <Navbar />
           </div>
-          <div className="w-full z-30">{children}</div>
+          <div className='w-full z-30'>{children}</div>
         </body>
       </html>
     </StoreProvider>

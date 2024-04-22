@@ -22,3 +22,16 @@ interface Property {
 export interface PropertyGalleryModalProps {
   property: Property;
 }
+
+export type Currency =
+  | "NGN"
+  | "USD"
+  | "GBP"
+  | "EUR"
+  | "JPY"
+  | "AUD"
+  | "CAD"
+  | "CHF"
+  | "CNY"
+  | "SEK"
+  | "NZD";

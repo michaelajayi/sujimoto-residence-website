@@ -53,7 +53,7 @@ export default ResidenceGalleryModal;
                     style={{
                       height: "100%",
                       width: "100%",
-                      objectFit: "cover",
+                      fit: "cover",
                     }}
                     alt='gallery image'
                   />
