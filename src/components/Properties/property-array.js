@@ -74,8 +74,8 @@ const propertyArray = [
       "Experience the regal lifestyle at Ave Montaigne, where every detail exudes sophistication and elegance, and where luxury is elevated to an art form that immerses you in a world of sumptuousness and refinement.",
     active: true,
     img: aveMontaigne,
-    minPrice: 250000,
-    maxPrice: 400000,
+    minPrice: 300000,
+    maxPrice: 350000,
     amenities: [
       {
         title: "3 Bedroom flat",
